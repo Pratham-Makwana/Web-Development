@@ -1,0 +1,42 @@
+/* Iniversal Selector * */
+*{
+    font-size: 24px;
+}
+/* Element Selector */
+body{
+    font-size: 20px;
+}
+/* Element Selector */
+p{
+    background-color: aqua;
+}
+/*Nested Selector*/
+#first>p{
+    color: green;
+}
+
+/* Sudo Selector */
+p:hover{
+    font-family: monospace;
+}
+
+/* Group Selector */
+#first,#second {
+    color: red;
+}
+
+/* class selector */
+.purple{
+    color: purple;
+    font-family: sans-serif ;
+}
+/* class selector */
+.highlight{
+    background-color: bisque;
+    font-weight: bolder;
+    font-style: italic;
+}
+/* Id Selector */
+#third{
+    color: blue;
+}
