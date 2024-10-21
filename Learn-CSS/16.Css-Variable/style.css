@@ -1,0 +1,51 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-text-color: #d81515;
+    --secondary-text-color : #444;
+    --card-background: #fff;
+    --background-color : #eee;
+    --deafault-margin: 30px;
+}
+.dark {
+    --primary-text-color: #fff;
+    --secondary-text-color : #ddd;
+    --card-background: #333;
+    --background-color : #111;
+}
+
+.container {
+    min-height: 100vh;
+    padding: 40px;
+    --my-var: aquamarine;
+    background-color: var(--background-color);
+}
+h1{
+    text-align: center;
+    color: var(--primary-text-color);
+}
+
+.box {
+    /* --my-var: yellow; */
+    padding: var(--deafault-margin);
+    margin-block: var(--deafault-margin);
+    border-radius: 20px;
+    background-color: var(--card-background);
+    color: var(--primary-text-color);
+    /* background-color: var(--my-var) ; */
+    
+}
+.box h2 {
+    color: var(--primary-text-color);
+    margin-bottom: var(--deafault-margin)   ;
+}
+
+@media screen and (min-width: 800px){
+    .container {
+        --my-var: pink;
+    }
+}
