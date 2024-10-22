@@ -1,0 +1,108 @@
+body{
+    margin: 0;
+    background-color: teal;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 200px;
+ 
+}
+
+.container{
+    height: 300px;
+    width: 300px;
+    border: 2px solid white;
+    animation: orbit 4s linear infinite;
+    border-radius: 50%;
+}
+
+.box{
+    background-color: white;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    /* animation-name: circle; */
+    animation-duration: 1s;
+    /* animation-delay: 2s; */
+    animation-iteration-count: 5;
+    animation-direction: normal;
+    animation-timing-function: linear;
+    /* animation-name: orbit; */
+    /* animation-fill-mode: both; */
+    /* transition: 1s ease; */
+}
+
+.loader{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.dot{
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    background-color: white;
+    animation: up-down 0.5s ease  infinite alternate ;
+}
+
+.dot:nth-child(2){
+    animation-delay: 0.1s;
+}
+
+.dot:nth-child(3){
+    animation-delay: 0.2s;
+    
+}
+.dot:nth-child(4){
+    animation-delay: 0.3s;
+    
+}
+
+@keyframes up-down {
+    from { 
+        transform: translateY(-10px)
+    }
+    from { 
+        transform: translateY(10px)
+    }
+
+}
+
+/* .box:hover{
+    transform: translate(200px);
+} */
+
+
+@keyframes orbit {
+    from{
+        transform: rotate(0);
+    }
+
+    to{
+        transform: rotate(360deg);
+    }
+}
+@keyframes side-in {
+    0%{
+        transform: translate(-400px);
+    }
+    100%{
+        transform: translate(200px);
+    }
+}
+
+@keyframes circle {
+    0%{
+        transform: translate(0,0);
+    }25%{
+        transform: translate(200px,0);
+    }50%{
+        transform: translate(200px,200px);
+    }75%{
+        transform: translate(0,200px);
+    }
+}
